@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CA:wght@100..400&family=Playwrite+DE+LA:wght@100..400&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Major project</title>
+    <style>
+      .main {
+        width: 1400px;
+        height: 650px;
+        border: 2px solid blue;
+        border-color: rgb(178, 222, 222);
+        margin-left: 50px;
+        margin-top: 35px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, #5dd6ee, #ffffff, #8fb7d9);
+      }
+      .head {
+        text-align: center;
+        font-family: "IBM Plex Serif", serif;
+        font-size: 30px;
+        background-image: url("https://media.giphy.com/media/PgTQDHjMBkVG0/giphy.gif");
+        color: transparent;
+        -webkit-background-clip: text;
+      }
+      .nav {
+        float: right;
+        margin-right: 40px;
+        margin-top: 15px;
+      }
+      .nav a {
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 20px;
+        color: rgb(211, 117, 191);
+      }
+      .nav a:hover {
+        text-decoration: underline;
+      }
+      button {
+        font-size: 18px;
+        color: #000000;
+        font-family: inherit;
+        font-weight: 800;
+        cursor: pointer;
+        position: relative;
+        border: none;
+        background: none;
+        text-transform: uppercase;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: color;
+        float: right;
+        margin-top: 28px;
+        margin-right: 40px;
+      }
+
+      button:focus,
+      button:hover {
+        color: #cd1313;
+      }
+
+      button:focus:after,
+      button:hover:after {
+        width: 100%;
+        left: 0%;
+      }
+
+      button:after {
+        content: "";
+        pointer-events: none;
+        bottom: -2px;
+        left: 50%;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 500ms;
+        transition-property: width, left;
+      }
+      body {
+        background-color: #e0f3f7;
+      }
+      img {
+        width: 400px;
+        margin-top: 150px;
+        margin-left: 50px;
+        box-shadow: 10px 10px 10px 5px rgb(85, 83, 83);
+        float: left;
+      }
+      .box {
+        width: 1300px;
+        height: 500px;
+        border-style: inset;
+        margin-top: 80px;
+        margin-left: 50px;
+        background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/01d9bc30971807.563b2b13c384b.gif");
+        background-repeat: no-repeat;
+        background-size: 500px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 3px rgb(85, 83, 83);
+      }
+      h3 {
+        float: right;
+        margin-left: 510px;
+        font-size: 20px;
+        font-family: "Playfair Display", serif;
+        color: #db5111;
+      }
+      ul {
+        float: right;
+        margin-left: 490px;
+      }
+      ul li {
+        font-family: "Playwrite DE LA", cursive;
+        color: #612fc5;
+        font-size: 16.5px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 10px;
+        font-family: "Lobster", sans-serif;
+        font-size: 17px;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="head">Welcome to Weather Forecasting</h1>
+    <div class="main">
+      <a href="about.html"> <button>About Me</button></a>
+      <a href="weather app.html"> <button>Weather App</button></a>
+      <a href="index.html"> <button>Home</button></a>
+      <div class="box">
+        <div class="dis">
+          <h3>
+            Weather forecasting involves predicting atmospheric conditions for a
+            specific location and time using data from satellites, radar,
+            weather stations, and computer models.
+          </h3>
+          <ul>
+            <li>
+              Current Conditions: Real-time data on temperature, humidity, wind
+              speed, and atmospheric pressure.
+            </li>
+            <li>
+              Hourly and Daily Forecasts: Predictions for upcoming hours and
+              days, helping with short-term and long-term planning.
+            </li>
+            <li>
+              Humidity Levels: Information on the amount of moisture in the air,
+              crucial for understanding comfort levels and precipitation
+              chances.
+            </li>
+            <li>
+              Wind Speed and Direction: Data on wind velocity and direction,
+              important for activities like sailing, flying, and outdoor events.
+            </li>
+            <li>
+              Severe Weather Alerts: Notifications for extreme weather events
+              like storms, hurricanes, and tornadoes, ensuring safety and
+              preparedness.
+            </li>
+            <li>
+              Interactive Maps: Visual representations of weather patterns,
+              including radar images, precipitation, and temperature variations.
+            </li>
+            <li>
+              Climate Data: Historical weather data for analyzing trends and
+              patterns over time.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>© 2024 Crafted with passion and pixels by MANIKANTA.</footer>
+</html>
